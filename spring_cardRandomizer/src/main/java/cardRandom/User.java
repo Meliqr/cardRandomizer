@@ -2,14 +2,22 @@ package cardRandom;
 
 public class User {
     private long id;
-    private String userName, firstName, lastName, emailAddress;
+    private String userName, pass, firstName, lastName, emailAddress;
 
+    
+    public User(String userName, String pass) {
+        this.userName = userName;
+        this.pass = pass;
+    }
+    
     public User(long id, String userName, String firstName, String lastName, String emailAddress) {
         this.id = id;
         this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
+    }
+    public User(){
     }
 
     @Override
@@ -57,6 +65,14 @@ public class User {
 
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
 	}
     
 

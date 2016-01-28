@@ -1,7 +1,6 @@
 package cardRandom;
 
 
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -10,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,8 +24,13 @@ public class GetUsersController {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    @RequestMapping(value="/getUser",method=RequestMethod.POST)
-    public User getUser(@RequestParam(value="username", defaultValue="") String username, @RequestParam(value="pass", defaultValue="") String pass) {
+    @RequestMapping(value="/getUser",method=RequestMethod.POST, consumes="application/json")
+ //   public User getUser(@RequestParam(value="username", defaultValue="") String username, @RequestParam(value="pass", defaultValue="") String pass) {
+    public User getUser(@RequestBody User inUser) {
+    	String username = inUser.getUserName();
+    	String pass = inUser.getPass();
+    	
+    	System.out.println(username + " " + pass + "\n");
     	DriverManagerDataSource dataSource = new DriverManagerDataSource();
     	dataSource.setDriverClassName("org.postgresql.Driver");
     	dataSource.setUrl("jdbc:postgresql://localhost:5432");
