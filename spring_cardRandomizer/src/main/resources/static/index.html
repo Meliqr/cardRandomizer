@@ -52,6 +52,17 @@ Email Address: <input type="text" ng-model="registerEmailAddress" />
     </ul>
 </div>
 
+
+<div ng-controller="openBoosterCtrl">
+    <p>Open a booster pack!  Click to open a Zendikar booster pack.</p>
+    <button ng-click="openBooster()">Click to Open Booster</button>
+    <ul class="boosterAll">
+        <li class="boosterSingle">
+            <span ng-repeat="card in boosterReturn.cards"><img ng-src="/Zendikar/ZEN_{{card.cardId}}.jpg" alt="{{phone.cardName}}"></span>
+        </li>
+    </ul>
+</div>
+
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 

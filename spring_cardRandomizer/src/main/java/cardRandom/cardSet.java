@@ -1,5 +1,7 @@
 package cardRandom;
 
+import java.util.ArrayList;
+
 public class CardSet {
 	private int numCommon;
 	private int numUncommon;
@@ -9,12 +11,12 @@ public class CardSet {
 	private int packSize;
 	private boolean hasPremium;
 	private String setName;
-	private String setAbreviation;
+	private String setAbbreviation;
 	
 	
 	public CardSet(String inName, String inAbrv, int nc, int nu, int nr, int nm, int nl, int pz, boolean hp){
 		this.setName = inName;
-		this.setAbreviation = inAbrv;
+		this.setAbbreviation = inAbrv;
 		this.numCommon = nc;
 		this.numUncommon = nu;
 		this.numRare = nr;
@@ -22,7 +24,6 @@ public class CardSet {
 		this.numLands = nl;
 		this.packSize = pz;
 		this.hasPremium = hp;
-		
 	}
 	public CardSet(){
 	}
@@ -76,20 +77,24 @@ public class CardSet {
 		this.setName = setName;
 	}
 	public String getSetAbreviation() {
-		return setAbreviation;
+		return setAbbreviation;
 	}
 	public void setSetAbreviation(String setAbreviation) {
-		this.setAbreviation = setAbreviation;
+		this.setAbbreviation = setAbreviation;
 	}
-	public int[] generateBoosterPack(int commons, int uncommons, int rares, int lands){
-		int[] retArry= new int[packSize];		
+	public BoosterPack generateBoosterPack(int commons, int uncommons, int rares, int lands){
+		System.out.println(numCommon + " " + numUncommon + " " + numRare + " " + numMythic + " " + numLands + " " + packSize + " " + hasPremium + " " + setName + " " + setAbbreviation + "\n");	
+		int[] alreadyUsedCards= new int[packSize];		
 		int curIndex = 0;
 		int tempCard = 0;
+		int packId = (int) (Math.random() * 700000);
+		ArrayList<Card> boosterCardsList = new ArrayList<Card>();
 		
 		for(int i=0; i<commons;i++){
 			tempCard = (int) ((Math.random() * numCommon) + 1);
-			if(!checkDupes(retArry, tempCard, curIndex)){
-				retArry[curIndex] = tempCard;
+			if(!checkDupes(alreadyUsedCards, tempCard, curIndex)){
+				alreadyUsedCards[curIndex] = tempCard;
+				boosterCardsList.add(findCardInfo(tempCard, setName, setAbbreviation, "common"));
 				curIndex++;
 			}
 			else{
@@ -99,8 +104,9 @@ public class CardSet {
 		
 		for(int i=0; i<uncommons;i++){
 			tempCard = (int) ((Math.random() * numUncommon) + numCommon + 1);
-			if(!checkDupes(retArry, tempCard, curIndex)){
-				retArry[curIndex] = tempCard;
+			if(!checkDupes(alreadyUsedCards, tempCard, curIndex)){
+				alreadyUsedCards[curIndex] = tempCard;
+				boosterCardsList.add(findCardInfo(tempCard, setName, setAbbreviation, "uncommon"));
 				curIndex++;
 			}
 			else{
@@ -111,27 +117,30 @@ public class CardSet {
 			int hasMythic = (int) (Math.random()*8);
 			if(hasMythic == 7){
 				tempCard = (int) ((Math.random() * numMythic) + numCommon + numUncommon + numRare + 1);
+				boosterCardsList.add(findCardInfo(tempCard, setName, setAbbreviation, "mythic rare"));
 			}
 			else{
 				tempCard = (int) ((Math.random() * numRare) + numCommon + numUncommon + 1);
+				boosterCardsList.add(findCardInfo(tempCard, setName, setAbbreviation, "rare"));
 			}
-			retArry[curIndex] = tempCard;
+			alreadyUsedCards[curIndex] = tempCard;
 			curIndex++;
 		}
 		else{
 			tempCard = (int) ((Math.random() * numRare) + numCommon + numUncommon + 1);
-			retArry[curIndex] = tempCard;
+			boosterCardsList.add(findCardInfo(tempCard, setName, setAbbreviation, "rare"));
+			alreadyUsedCards[curIndex] = tempCard;
 			curIndex++;
 		}
 		
 		if(lands == 1){
 			tempCard = (int) ((Math.random() * numLands) + numCommon + numUncommon + numRare + numMythic + 1);
-			retArry[curIndex] = tempCard;
+			boosterCardsList.add(findCardInfo(tempCard, setName, setAbbreviation, "land"));
+			alreadyUsedCards[curIndex] = tempCard;
 			curIndex++;
 		}
-		
-		
-		return retArry;
+				
+		return new BoosterPack(setName, setAbbreviation, boosterCardsList, packId);
 	}
 	
 	public boolean checkDupes(int[] checkArray, int checkVal, int arrayIndex){
@@ -141,6 +150,9 @@ public class CardSet {
 			}
 		}
 		return false;
+	}
+	public Card findCardInfo(int cardId, String cardSet, String cardSetAbbreviation, String rarity){
+		return new Card(cardSet, cardSetAbbreviation, rarity, cardId);
 	}
 	
 }

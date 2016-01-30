@@ -50,3 +50,29 @@ cardRandomizer.controller('userRegisterCtrl', function($scope, $http) {
         });
     }
 });
+
+cardRandomizer.controller('openBoosterCtrl', function($scope, $http) {
+    $scope.boosterReturn = "";
+    $scope.openBooster = function() {
+        var request = $http({
+            method: "post",
+            url: "/getBooster",
+            data: {
+                "setName": "Zendikar",
+                "numCommon": 101,
+                "setAbbreviation": "ZEN",
+                "numUncommon": 60,
+                "numRare": 53,
+                "numMythic": 15,
+                "numLands": 20,
+                "packSize": 15,
+                "hasPremium": true
+            }
+        });
+
+        request.success(function (data) {
+            console.log(data);
+            $scope.boosterReturn = data;
+        });
+    }
+});
