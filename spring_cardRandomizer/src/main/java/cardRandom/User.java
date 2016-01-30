@@ -2,7 +2,11 @@ package cardRandom;
 
 public class User {
     private long id;
-    private String userName, pass, firstName, lastName, emailAddress;
+    private String userName;
+    private String pass;
+    private String firstName;
+    private String lastName;
+    private String emailAddress;
 
     
     public User(String userName, String pass) {

@@ -1,6 +1,6 @@
 package cardRandom;
 
-public class cardSet {
+public class CardSet {
 	private int numCommon;
 	private int numUncommon;
 	private int numRare;
@@ -9,67 +9,78 @@ public class cardSet {
 	private int packSize;
 	private boolean hasPremium;
 	private String setName;
-	private String setAbrv;
+	private String setAbreviation;
 	
 	
-	public cardSet(String inName, String inAbrv, int nc, int nu, int nr, int nm, int nl, int pz, boolean hp){
-		setName = inName;
-		setAbrv = inAbrv;
-		numCommon = nc;
-		numUncommon = nu;
-		numRare = nr;
-		numMythic = nm;
-		numLands = nl;
-		packSize = pz;
-		hasPremium = hp;
+	public CardSet(String inName, String inAbrv, int nc, int nu, int nr, int nm, int nl, int pz, boolean hp){
+		this.setName = inName;
+		this.setAbreviation = inAbrv;
+		this.numCommon = nc;
+		this.numUncommon = nu;
+		this.numRare = nr;
+		this.numMythic = nm;
+		this.numLands = nl;
+		this.packSize = pz;
+		this.hasPremium = hp;
 		
 	}
-	
-	public void setNumCommon(int nm){
-		numCommon = nm;
+	public CardSet(){
 	}
 	
-	public void setNumUncommon(int nm){
-		numUncommon = nm;
-	}
-	public void setNumRare(int nm){
-		numRare = nm;
-	}
-	public void setNumMythic(int nm){
-		numMythic = nm;
-	}
-	
-	public void setLands(int nm){
-		numLands = nm;
-	}
-	public void setPackSize(int nm){
-		packSize = nm;
-	}
-	
-	public int getNumCommon(){
+	public int getNumCommon() {
 		return numCommon;
 	}
-	
-	public int getNumUncommon(){
+	public void setNumCommon(int numCommon) {
+		this.numCommon = numCommon;
+	}
+	public int getNumUncommon() {
 		return numUncommon;
 	}
-	
-	public int getNumRare(){
+	public void setNumUncommon(int numUncommon) {
+		this.numUncommon = numUncommon;
+	}
+	public int getNumRare() {
 		return numRare;
 	}
-	
-	public int getNumMythic(){
+	public void setNumRare(int numRare) {
+		this.numRare = numRare;
+	}
+	public int getNumMythic() {
 		return numMythic;
 	}
-	
-	public int getNumLands(){
+	public void setNumMythic(int numMythic) {
+		this.numMythic = numMythic;
+	}
+	public int getNumLands() {
 		return numLands;
 	}
-	
-	public int getPackSize(){
+	public void setNumLands(int numLands) {
+		this.numLands = numLands;
+	}
+	public int getPackSize() {
 		return packSize;
 	}
-	
+	public void setPackSize(int packSize) {
+		this.packSize = packSize;
+	}
+	public boolean isHasPremium() {
+		return hasPremium;
+	}
+	public void setHasPremium(boolean hasPremium) {
+		this.hasPremium = hasPremium;
+	}
+	public String getSetName() {
+		return setName;
+	}
+	public void setSetName(String setName) {
+		this.setName = setName;
+	}
+	public String getSetAbreviation() {
+		return setAbreviation;
+	}
+	public void setSetAbreviation(String setAbreviation) {
+		this.setAbreviation = setAbreviation;
+	}
 	public int[] generateBoosterPack(int commons, int uncommons, int rares, int lands){
 		int[] retArry= new int[packSize];		
 		int curIndex = 0;
