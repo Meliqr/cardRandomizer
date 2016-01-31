@@ -1,4 +1,4 @@
-package cardRandom;
+package us.kindt.cardapp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -12,7 +12,7 @@ public class CardController {
 	
     @Autowired
     private JdbcTemplate jdbcTemplate;
-    private static final DriverManagerDataSource DATA_SOURCE = new DriverManagerDataSource("jdbc:postgresql://localhost:5432","Billiam","train1ng");
+    private static final DriverManagerDataSource DATA_SOURCE = new DriverManagerDataSource("jdbc:postgresql://localhost:5432","***","***");
 
     @RequestMapping("/getBooster")
     public BoosterPack getBooster(@RequestBody CardSet inCardSet) {

@@ -1,4 +1,4 @@
-package cardRandom;
+package us.kindt.cardapp;
 
 public class User {
     private long id;

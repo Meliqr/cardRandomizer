@@ -1,4 +1,4 @@
-package cardRandom;
+package us.kindt.cardapp;
 
 import java.util.List;
 

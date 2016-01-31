@@ -1,4 +1,4 @@
-package cardRandom;
+package us.kindt.cardapp;
 
 
 import java.sql.ResultSet;
@@ -14,9 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.apache.commons.codec.digest.DigestUtils;
 
-import cardRandom.User;
+import us.kindt.cardapp.User;
+
+import org.apache.commons.codec.digest.DigestUtils;
 
 
 @RestController
@@ -25,7 +26,7 @@ public class UserController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
     
-    private static final DriverManagerDataSource DATA_SOURCE = new DriverManagerDataSource("jdbc:postgresql://localhost:5432","xxx","xxx");
+    private static final DriverManagerDataSource DATA_SOURCE = new DriverManagerDataSource("jdbc:postgresql://localhost:5432","***","***");
 
     @RequestMapping(value="/getUser",method=RequestMethod.POST)
     public User getUser(@RequestBody User inUser) {

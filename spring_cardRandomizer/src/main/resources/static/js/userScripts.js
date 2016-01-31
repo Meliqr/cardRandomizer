@@ -53,6 +53,12 @@ cardRandomizer.controller('userRegisterCtrl', function($scope, $http) {
 
 cardRandomizer.controller('openBoosterCtrl', function($scope, $http) {
     $scope.boosterReturn = "";
+    $scope.allSets = "";
+    $http.get('cards/setInfo.json').success(function(data) {
+        $scope.allSets = data;
+    });
+
+    $scope.cardSet = "ZEN";
     $scope.openBooster = function() {
         var request = $http({
             method: "post",

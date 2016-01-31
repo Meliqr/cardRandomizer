@@ -1,4 +1,4 @@
-package cardRandom;
+package us.kindt.cardapp;
 
 import java.util.ArrayList;
 
@@ -76,11 +76,11 @@ public class CardSet {
 	public void setSetName(String setName) {
 		this.setName = setName;
 	}
-	public String getSetAbreviation() {
+	public String getSetAbbreviation() {
 		return setAbbreviation;
 	}
-	public void setSetAbreviation(String setAbreviation) {
-		this.setAbbreviation = setAbreviation;
+	public void setSetAbbreviation(String setAbbreviation) {
+		this.setAbbreviation = setAbbreviation;
 	}
 	public BoosterPack generateBoosterPack(int commons, int uncommons, int rares, int lands){
 		System.out.println(numCommon + " " + numUncommon + " " + numRare + " " + numMythic + " " + numLands + " " + packSize + " " + hasPremium + " " + setName + " " + setAbbreviation + "\n");	
