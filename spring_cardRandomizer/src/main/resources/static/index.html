@@ -54,14 +54,14 @@ Email Address: <input type="text" ng-model="registerEmailAddress" />
 
 
 <div ng-controller="openBoosterCtrl">
-    <p>Open a booster pack!  Click to open a Zendikar booster pack.</p>
-    <select ng-model="cardSet">
+    <p>Open a booster pack!  Click to open a {{cardSetName}} booster pack.</p>
+    <select ng-model="cardSet" ng-change="getSetCards()">
         <option ng-repeat="curSet in allSets" value="{{curSet.id}}">{{curSet.name}}</option>
     </select>
     <button ng-click="openBooster()">Click to Open Booster</button>
     <ul class="boosterAll">
         <li class="boosterSingle">
-            <span ng-repeat="card in boosterReturn.cards"><img ng-src="/{{card.cardSet}}/{{card.cardSetAbbreviation}}_{{card.cardId}}.jpg" alt="{{card.cardName}}"></span>
+            <span ng-repeat="card in boosterReturn"><img ng-src="{{card.image_url}}" alt="{{card.name}}"></span>
         </li>
     </ul>
 </div>
