@@ -56,7 +56,7 @@ Email Address: <input type="text" ng-model="registerEmailAddress" />
 <div ng-controller="openBoosterCtrl">
     <p>Open a booster pack!  Click to open a {{cardSetName}} booster pack.</p>
     <select ng-model="cardSet" ng-change="getSetCards()">
-        <option ng-repeat="curSet in allSets" value="{{curSet.id}}">{{curSet.name}}</option>
+        <option ng-repeat="curSet in allSets | orderBy:'releaseDate'" value="{{curSet.id}}" >{{curSet.name}}</option>
     </select>
     <button ng-click="openBooster()">Click to Open Booster</button>
     <ul class="boosterAll">

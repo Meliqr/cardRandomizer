@@ -5,7 +5,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ARB",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ARB"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ARB",
+    "releaseDate":"2009-04-30"
   },
   {
     "id": "ALL",
@@ -13,7 +14,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ALL",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ALL"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ALL",
+    "releaseDate":"1996-06-10"
   },
   {
     "id": "ATQ",
@@ -21,7 +23,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ATQ",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ATQ"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ATQ",
+    "releaseDate":"1994-03-15"
   },
   {
     "id": "APC",
@@ -29,7 +32,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/APC",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=APC"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=APC",
+    "releaseDate":"2001-06-04"
   },
   {
     "id": "ARN",
@@ -37,7 +41,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ARN",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ARN"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ARN",
+    "releaseDate":"1993-12-15"
   },
   {
     "id": "AVR",
@@ -45,7 +50,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/AVR",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=AVR"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=AVR",
+    "releaseDate":"2012-05-04"
   },
   {
     "id": "BFZ",
@@ -53,7 +59,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/BFZ",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=BFZ"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=BFZ",
+    "releaseDate":"2015-10-02"
   },
   {
     "id": "BOK",
@@ -61,7 +68,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/BOK",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=BOK"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=BOK",
+    "releaseDate":"2005-02-04"
   },
   {
     "id": "BNG",
@@ -69,7 +77,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/BNG",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=BNG"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=BNG",
+    "releaseDate":"2014-02-07"
   },
   {
     "id": "CHK",
@@ -77,7 +86,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/CHK",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=CHK"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=CHK",
+    "releaseDate":"2004-10-01"
   },
   {
     "id": "6ED",
@@ -85,7 +95,8 @@
     "border": "white",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/6ED",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=6ED"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=6ED",
+    "releaseDate":"1999-03-24"
   },
   {
     "id": "CSP",
@@ -93,7 +104,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/CSP",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=CSP"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=CSP",
+    "releaseDate":"2006-07-21"
   },
   {
     "id": "CON",
@@ -101,7 +113,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/CON",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=CON"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=CON",
+    "releaseDate":"2009-02-06"
   },
   {
     "id": "DKA",
@@ -109,7 +122,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/DKA",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DKA"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DKA",
+    "releaseDate":"2012-02-03"
   },
   {
     "id": "DST",
@@ -117,7 +131,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/DST",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DST"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DST",
+    "releaseDate":"2004-02-06"
   },
   {
     "id": "DIS",
@@ -125,7 +140,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/DIS",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DIS"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DIS",
+    "releaseDate":"2006-05-05"
   },
   {
     "id": "DGM",
@@ -133,7 +149,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/DGM",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DGM"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DGM",
+    "releaseDate":"2009-05-03"
   },
   {
     "id": "DTK",
@@ -141,7 +158,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/DTK",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DTK"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DTK",
+    "releaseDate":"2015-03-27"
   },
   {
     "id": "8ED",
@@ -149,7 +167,8 @@
     "border": "white",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/8ED",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=8ED"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=8ED",
+    "releaseDate":"2003-07-28"
   },
   {
     "id": "EVE",
@@ -157,7 +176,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/EVE",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=EVE"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=EVE",
+    "releaseDate":"2008-07-25"
   },
   {
     "id": "EXO",
@@ -165,7 +185,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/EXO",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=EXO"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=EXO",
+    "releaseDate":"1998-06-15"
   },
   {
     "id": "FEM",
@@ -173,7 +194,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/FEM",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=FEM"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=FEM",
+    "releaseDate":"1994-11-15"
   },
   {
     "id": "FRF",
@@ -181,7 +203,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/FRF",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=FRF"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=FRF",
+    "releaseDate":"2015-01-23"
   },
   {
     "id": "5DN",
@@ -189,7 +212,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/5DN",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=5DN"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=5DN",
+    "releaseDate":"2004-06-04"
   },
   {
     "id": "5ED",
@@ -197,7 +221,8 @@
     "border": "white",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/5ED",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=5ED"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=5ED",
+    "releaseDate":"1997-03-24"
   },
   {
     "id": "4ED",
@@ -205,7 +230,8 @@
     "border": "white",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/4ED",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=4ED"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=4ED",
+    "releaseDate":"1995-04-15"
   },
   {
     "id": "FUT",
@@ -213,7 +239,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/FUT",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=FUT"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=FUT",
+    "releaseDate":"2007-05-04"
   },
   {
     "id": "GTC",
@@ -221,7 +248,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/GTC",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=GTC"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=GTC",
+    "releaseDate":"2013-02-01"
   },
   {
     "id": "GPT",
@@ -229,7 +257,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/GPT",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=GPT"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=GPT",
+    "releaseDate":"2006-05-05"
   },
   {
     "id": "HML",
@@ -237,7 +266,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/HML",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=HML"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=HML",
+    "releaseDate":"1995-10-15"
   },
   {
     "id": "ICE",
@@ -245,7 +275,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ICE",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ICE"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ICE",
+    "releaseDate":"1995-06-15"
   },
   {
     "id": "ISD",
@@ -253,7 +284,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ISD",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ISD"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ISD",
+    "releaseDate":"2011-09-30"
   },
   {
     "id": "INV",
@@ -261,7 +293,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/INV",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=INV"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=INV",
+    "releaseDate":"2000-10-02"
   },
   {
     "id": "JOU",
@@ -269,7 +302,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/JOU",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=JOU"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=JOU",
+    "releaseDate":"2014-05-02"
   },
   {
     "id": "JUD",
@@ -277,7 +311,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/JUD",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=JUD"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=JUD",
+    "releaseDate":"2002-05-27"
   },
   {
     "id": "KTK",
@@ -285,7 +320,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/KTK",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=KTK"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=KTK",
+    "releaseDate":"2014-09-26"
   },
   {
     "id": "LEG",
@@ -293,7 +329,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/LEG",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LEG"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LEG",
+    "releaseDate":"1994-06-15"
   },
   {
     "id": "LGN",
@@ -301,7 +338,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/LGN",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LGN"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LGN",
+    "releaseDate":"2003-02-03"
   },
   {
     "id": "LEA",
@@ -309,7 +347,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/LEA",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LEA"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LEA",
+    "releaseDate":"1993-08-05"
   },
   {
     "id": "LEB",
@@ -317,7 +356,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/LEB",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LEB"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LEB",
+    "releaseDate":"1993-10-15"
   },
   {
     "id": "LRW",
@@ -325,7 +365,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/LRW",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LRW"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=LRW",
+    "releaseDate":"2007-10-12"
   },
   {
     "id": "M10",
@@ -333,7 +374,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/M10",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M10"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M10",
+    "releaseDate":"2009-07-17"
   },
   {
     "id": "M11",
@@ -341,7 +383,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/M11",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M11"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M11",
+    "releaseDate":"2010-07-16"
   },
   {
     "id": "M12",
@@ -349,7 +392,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/M12",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M12"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M12",
+    "releaseDate":"2011-07-15"
   },
   {
     "id": "M13",
@@ -357,7 +401,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/M13",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M13"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M13",
+    "releaseDate":"2012-07-13"
   },
   {
     "id": "M14",
@@ -365,7 +410,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/M14",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M14"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M14",
+    "releaseDate":"2013-07-19"
   },
   {
     "id": "M15",
@@ -373,7 +419,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/M15",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M15"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=M15",
+    "releaseDate":"2014-07-18"
   },
   {
     "id": "ORI",
@@ -381,7 +428,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/ORI",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ORI"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ORI",
+    "releaseDate":"2015-07-17"
   },
   {
     "id": "MMQ",
@@ -389,7 +437,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/MMQ",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MMQ"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MMQ",
+    "releaseDate":"1999-10-04"
   },
   {
     "id": "MIR",
@@ -397,7 +446,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/MIR",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MIR"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MIR",
+    "releaseDate":"1996-10-07"
   },
   {
     "id": "MRD",
@@ -405,7 +455,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/MRD",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MRD"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MRD",
+    "releaseDate":"2003-10-03"
   },
   {
     "id": "MBS",
@@ -413,7 +464,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/MBS",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MBS"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MBS",
+    "releaseDate":"2011-02-04"
   },
   {
     "id": "MMA",
@@ -421,7 +473,8 @@
     "border": "black",
     "type": "reprint",
     "url": "https://api.deckbrew.com/mtg/sets/MMA",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MMA"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MMA",
+    "releaseDate":"2013-06-07"
   },
   {
     "id": "MM2",
@@ -429,7 +482,8 @@
     "border": "black",
     "type": "reprint",
     "url": "https://api.deckbrew.com/mtg/sets/MM2",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MM2"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MM2",
+    "releaseDate":"2015-06-07"
   },
   {
     "id": "MOR",
@@ -437,7 +491,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/MOR",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MOR"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=MOR",
+    "releaseDate":"2008-02-01"
   },
   {
     "id": "NMS",
@@ -445,7 +500,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/NMS",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=NMS"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=NMS",
+    "releaseDate":"2000-02-14"
   },
   {
     "id": "NPH",
@@ -453,7 +509,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/NPH",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=NPH"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=NPH",
+    "releaseDate":"2011-05-13"
   },
   {
     "id": "9ED",
@@ -461,7 +518,8 @@
     "border": "white",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/9ED",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=9ED"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=9ED",
+    "releaseDate":"2005-07-13"
   },
   {
     "id": "OGW",
@@ -469,7 +527,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/OGW",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=OGW"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=OGW",
+    "releaseDate":"2016-01-22"
   },
   {
     "id": "ODY",
@@ -477,7 +536,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ODY",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ODY"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ODY",
+    "releaseDate":"2001-10-01"
   },
   {
     "id": "ONS",
@@ -485,7 +545,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ONS",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ONS"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ONS",
+    "releaseDate":"2002-10-07"
   },
   {
     "id": "PLC",
@@ -493,7 +554,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/PLC",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PLC"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PLC",
+    "releaseDate":"2007-02-07"
   },
   {
     "id": "PLS",
@@ -501,7 +563,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/PLS",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PLS"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PLS",
+    "releaseDate":"2001-01-27"
   },
   {
     "id": "POR",
@@ -509,7 +572,8 @@
     "border": "black",
     "type": "starter",
     "url": "https://api.deckbrew.com/mtg/sets/POR",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=POR"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=POR",
+    "releaseDate":"1997-06-15"
   },
   {
     "id": "PO2",
@@ -517,7 +581,8 @@
     "border": "black",
     "type": "starter",
     "url": "https://api.deckbrew.com/mtg/sets/PO2",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PO2"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PO2",
+    "releaseDate":"1998-06-15"
   },
   {
     "id": "PTK",
@@ -525,7 +590,8 @@
     "border": "white",
     "type": "starter",
     "url": "https://api.deckbrew.com/mtg/sets/PTK",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PTK"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PTK",
+    "releaseDate":"1999-05-15"
   },
   {
     "id": "PCY",
@@ -533,7 +599,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/PCY",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PCY"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=PCY",
+    "releaseDate":"2000-06-05"
   },
   {
     "id": "RAV",
@@ -541,7 +608,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/RAV",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=RAV"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=RAV",
+    "releaseDate":"2005-10-07"
   },
   {
     "id": "RTR",
@@ -549,7 +617,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/RTR",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=RTR"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=RTR",
+    "releaseDate":"2012-10-05"
   },
   {
     "id": "3ED",
@@ -557,7 +626,8 @@
     "border": "white",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/3ED",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=3ED"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=3ED",
+    "releaseDate":"1994-04-15"
   },
   {
     "id": "ROE",
@@ -565,7 +635,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ROE",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ROE"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ROE",
+    "releaseDate":"2010-04-23"
   },
   {
     "id": "SOK",
@@ -573,7 +644,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/SOK",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=SOK"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=SOK",
+    "releaseDate":"2005-06-03"
   },
   {
     "id": "SOM",
@@ -581,7 +653,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/SOM",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=SOM"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=SOM",
+    "releaseDate":"2010-10-01"
   },
   {
     "id": "SCG",
@@ -589,7 +662,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/SCG",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=SCG"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=SCG",
+    "releaseDate":"2003-05-26"
   },
   {
     "id": "7ED",
@@ -597,7 +671,8 @@
     "border": "white",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/7ED",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=7ED"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=7ED",
+    "releaseDate":"2001-04-11"
   },
   {
     "id": "SHM",
@@ -605,7 +680,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/SHM",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=SHM"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=SHM",
+    "releaseDate":"2008-05-02"
   },
   {
     "id": "ALA",
@@ -613,7 +689,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ALA",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ALA"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ALA",
+    "releaseDate":"2008-04-30"
   },
   {
     "id": "S99",
@@ -621,7 +698,8 @@
     "border": "white",
     "type": "starter",
     "url": "https://api.deckbrew.com/mtg/sets/S99",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=S99"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=S99",
+    "releaseDate":"1999-07-15"
   },
   {
     "id": "STH",
@@ -629,7 +707,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/STH",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=STH"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=STH",
+    "releaseDate":"1998-03-02"
   },
   {
     "id": "TMP",
@@ -637,7 +716,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/TMP",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=TMP"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=TMP",
+    "releaseDate":"1997-10-13"
   },
   {
     "id": "10E",
@@ -645,7 +725,8 @@
     "border": "black",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/10E",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=10E"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=10E",
+    "releaseDate":"2007-07-13"
   },
   {
     "id": "DRK",
@@ -653,7 +734,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/DRK",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DRK"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=DRK",
+    "releaseDate":"1994-08-15"
   },
   {
     "id": "THS",
@@ -661,7 +743,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/THS",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=THS"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=THS",
+    "releaseDate":"2013-09-27"
   },
   {
     "id": "TSP",
@@ -669,7 +752,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/TSP",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=TSP"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=TSP",
+    "releaseDate":"2006-10-06"
   },
   {
     "id": "TSB",
@@ -677,7 +761,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/TSB",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=TSB"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=TSB",
+    "releaseDate":"2006-10-06"
   },
   {
     "id": "TOR",
@@ -685,7 +770,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/TOR",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=TOR"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=TOR",
+    "releaseDate":"2002-02-04"
   },
   {
     "id": "UGL",
@@ -693,7 +779,8 @@
     "border": "silver",
     "type": "un",
     "url": "https://api.deckbrew.com/mtg/sets/UGL",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=UGL"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=UGL",
+    "releaseDate":"1998-08-17"
   },
   {
     "id": "UNH",
@@ -701,7 +788,8 @@
     "border": "silver",
     "type": "un",
     "url": "https://api.deckbrew.com/mtg/sets/UNH",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=UNH"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=UNH",
+    "releaseDate":"2004-11-19"
   },
   {
     "id": "2ED",
@@ -709,7 +797,8 @@
     "border": "white",
     "type": "core",
     "url": "https://api.deckbrew.com/mtg/sets/2ED",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=2ED"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=2ED",
+    "releaseDate":"1993-12-15"
   },
   {
     "id": "UDS",
@@ -717,7 +806,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/UDS",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=UDS"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=UDS",
+    "releaseDate":"1999-06-07"
   },
   {
     "id": "ULG",
@@ -725,7 +815,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ULG",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ULG"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ULG",
+    "releaseDate":"1999-02-15"
   },
   {
     "id": "USG",
@@ -733,7 +824,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/USG",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=USG"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=USG",
+    "releaseDate":"1998-10-12"
   },
   {
     "id": "VIS",
@@ -741,7 +833,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/VIS",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=VIS"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=VIS",
+    "releaseDate":"1997-02-03"
   },
   {
     "id": "WTH",
@@ -749,7 +842,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/WTH",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=WTH"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=WTH",
+    "releaseDate":"1997-06-09"
   },
   {
     "id": "WWK",
@@ -757,7 +851,8 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/WWK",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=WWK"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=WWK",
+    "releaseDate":"2010-02-05"
   },
   {
     "id": "ZEN",
@@ -765,6 +860,7 @@
     "border": "black",
     "type": "expansion",
     "url": "https://api.deckbrew.com/mtg/sets/ZEN",
-    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ZEN"
+    "cards_url": "https://api.deckbrew.com/mtg/cards?set=ZEN",
+    "releaseDate":"2009-10-02"
   }
 ]
