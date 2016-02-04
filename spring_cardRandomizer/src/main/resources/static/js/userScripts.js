@@ -1,4 +1,5 @@
 var cardRandomizer = angular.module('cardRandomizer', []);
+
 cardRandomizer.controller('allUsersCtrl', function($scope, $http) {
     $scope.users = {};
     $scope.getAllUsers = function() {
@@ -53,16 +54,16 @@ cardRandomizer.controller('userRegisterCtrl', function($scope, $http) {
 
 cardRandomizer.controller('openBoosterCtrl', function($scope, $http) {
     $scope.boosterReturn = [];
-    $scope.allSets = "";
+    $scope.allSets = [];
     $scope.cardSetName = "Magic Origins";
-    $scope.setCards = {};
+    $scope.setCards = [];
     $scope.cardSet = "ORI";
 
     $http.get('cards/setInfo.json').success(function (data) {
         $scope.allSets = data;
     });
 
-    $http.get("/cards/" + $scope.cardSet + "_cards.json").success(function (data) {
+    $http.get("cards/" + $scope.cardSet + "_cards.json").success(function (data) {
             $scope.setCards = data;
     });
 
@@ -112,28 +113,32 @@ cardRandomizer.controller('openBoosterCtrl', function($scope, $http) {
 
         request.success(function (data) {
             $scope.boosterReturn =[];
+            var commonIndex = commonCards.length;
+            var uncommonIndex = commonCards.length + uncommonCards.length;
+            var rareIndex = commonCards.length + uncommonCards.length + rareCards.length;
+            var mythicIndex = commonCards.length + uncommonCards.length + rareCards.length +mythicCards.length;
             data.cards.forEach(function(curCard){
-                if(curCard.cardId <= commonCards.length){
+                if(curCard.cardId <= commonIndex){
                     $scope.boosterReturn.push(commonCards[curCard.cardId-1]);
                 }
-                else if(curCard.cardId <= (commonCards.length + uncommonCards.length)){
-                    $scope.boosterReturn.push(uncommonCards[curCard.cardId-commonCards.length-1]);
+                else if(curCard.cardId <= uncommonIndex){
+                    $scope.boosterReturn.push(uncommonCards[curCard.cardId-commonIndex-1]);
                 }
-                else if((curCard.cardId <= (commonCards.length + uncommonCards.length + rareCards.length)) && (rareCards.length)){
-                    $scope.boosterReturn.push(rareCards[curCard.cardId-commonCards.length-uncommonCards.length-1]);
+                else if((curCard.cardId <= rareIndex) && (rareCards.length)){
+                    $scope.boosterReturn.push(rareCards[curCard.cardId-uncommonIndex-1]);
                 }
-                else if((curCard.cardId <= (commonCards.length + uncommonCards.length + rareCards.length +mythicCards.length)) && (mythicCards.length)){
-                    $scope.boosterReturn.push(mythicCards[curCard.cardId-commonCards.length-uncommonCards.length-rareCards.length-1]);
+                else if((curCard.cardId <= mythicIndex) && (mythicCards.length)){
+                    $scope.boosterReturn.push(mythicCards[curCard.cardId-rareIndex-1]);
                 }
                 else{
-                    $scope.boosterReturn.push(landCards[curCard.cardId-commonCards.length-uncommonCards.length-rareCards.length-mythicCards.length-1]);
+                    $scope.boosterReturn.push(landCards[curCard.cardId-mythicIndex-1]);
                 }
             });
         });
     }
     $scope.getSetCards = function() {
         var singleSet = $scope.allSets.forEach(function(setCheck){if(setCheck.id == $scope.cardSet){$scope.cardSetName = setCheck.name;}});
-        $http.get("/cards/"+$scope.cardSet+"_cards.json")
+        $http.get("cards/"+$scope.cardSet+"_cards.json")
             .success(function(data) {
                 $scope.setCards = data;
             });

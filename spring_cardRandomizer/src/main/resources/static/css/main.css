@@ -95,20 +95,74 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+    background-color:#0C5DA5;
+}
+.boosterAll li{
+    display:inline;
+}
+label, input{
+    display:block;
+}
+label{
+    margin-bottom:10px;
+    color:#666666;
+}
+input{
+    margin-bottom:10px;
+}
 
+h2{
+    color:#043A6B;
+    font-family:Molengo,sans-serif;
+}
 
+h1{
+    font-family:Copse,serif;
+    font-size:40px;
+}
+header{
+    background-color:#444444;
+    color:#FFFFFF;
+    padding:10px 0px 10px 20px;
+    text-align:center;
+}
 
+section{
+    border:2px solid #FF4F00;
+    border-radius: 10px;
+    margin:10px auto 10px auto;
+    padding-left:5px;
+    background-color:#FFFFFF;
+    min-width:290px;
+    max-width:750px;
+}
 
+footer{
+    border-top:1px solid black;
+    background-color:#FFFFFF;
+    padding:5px 0px 5px 10px;
+}
 
+.copyInfo{
+    font-size:11px;
+}
 
+button{
+    background-color: #FFDD73; /* Green */
+    border: 1px solid black;
+    color: #444444;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:2px;
+}
 
-
-
-
-
-
-
-
+select{
+    height:35px;
+}
 
 
 /* ==========================================================================
