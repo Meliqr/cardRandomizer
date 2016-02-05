@@ -29,7 +29,7 @@
     <label for="login-password">Password:</label> <input type="password" ng-model="userPass" id="login-password"/>
     <button ng-click="getUser()">Click to Login</button>
     <p class="userReturn">{{user.id}} {{user.userName}} {{user.firstName}} {{user.lastName}}
-        {{user.emailAddress}}</p>
+        {{user.emailAddress}} {{user.queryResponse}}</p>
 </section>
 
 <section ng-controller="userRegisterCtrl" class="registerForm">

@@ -47,7 +47,7 @@ cardRandomizer.controller('userRegisterCtrl', function($scope, $http) {
 
         request.success(function (data) {
             console.log(data);
-            $scope.registerReturn = data;
+            $scope.registerReturn = data.queryResponse;
         });
     }
 });

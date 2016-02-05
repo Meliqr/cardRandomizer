@@ -29,20 +29,32 @@ public class UserController {
     private static final DriverManagerDataSource DATA_SOURCE = new DriverManagerDataSource("jdbc:postgresql://localhost:5432","***","***");
 
     @RequestMapping(value="/getUser",method=RequestMethod.POST)
-    public User getUser(@RequestBody User inUser) {
+    public QueriedUser getUser(@RequestBody User inUser) {
     	String userName = inUser.getUserName();
     	String pass = inUser.getPass();
-    	
-    	System.out.println(userName + " " + pass + "\n");	
-    	String sha256hexPass = DigestUtils.sha256Hex(pass);  
+    	String sha256hexPass;
+    	System.out.println(userName + " -- " + pass + "\n");	 
     	
     	this.jdbcTemplate = new JdbcTemplate(DATA_SOURCE);
+    	QueriedUser retUser;
     	
-    	User retUser = this.jdbcTemplate.queryForObject(
-                "SELECT id,username,firstname,lastname,emailaddress FROM Users WHERE username=? AND password=?", 
-                new Object[] { userName, sha256hexPass },
-                (rs, rowNum) -> new User(rs.getLong("id"), rs.getString("username"), rs.getString("firstname"),rs.getString("lastname"),rs.getString("emailaddress"))
-        );
+    	if((userName==null) || (pass==null)){
+    		retUser = new QueriedUser("User Name or Password not entered.");
+    	}
+    	else{
+    		sha256hexPass = DigestUtils.sha256Hex(pass); 
+    		int countOfUsers = this.jdbcTemplate.queryForObject("SELECT count(*) FROM Users WHERE username=? AND password=?", Integer.class, new Object[] { userName, sha256hexPass });
+    		if(countOfUsers == 0){
+    			retUser = new QueriedUser("No user with matching User Name and Password.");
+    		}
+    		else{
+    			retUser = this.jdbcTemplate.queryForObject(
+    					"SELECT id,username,firstname,lastname,emailaddress FROM Users WHERE username=? AND password=?", 
+    					new Object[] { userName, sha256hexPass },
+    					(rs, rowNum) -> new QueriedUser(rs.getLong("id"), rs.getString("username"), rs.getString("firstname"),rs.getString("lastname"),rs.getString("emailaddress"),"Login Success")
+    			);
+    		}
+    	}
     	
     	return retUser;
 
@@ -61,28 +73,37 @@ public class UserController {
     }
     
     @RequestMapping(value="/registerUser", method=RequestMethod.POST)
-    public User registerUser(@RequestBody User inUser) {
+    public QueriedUser registerUser(@RequestBody User inUser) {
     	String userName = inUser.getUserName();
     	String pass = inUser.getPass();
     	String firstName = inUser.getFirstName();
     	String lastName = inUser.getLastName();
     	String emailAddress = inUser.getEmailAddress();
-    	
-    	   	
-    	String sha256hexPass = DigestUtils.sha256Hex(pass);  
-    	
+    	String sha256hexPass;  
+    	QueriedUser retUser;
     	this.jdbcTemplate = new JdbcTemplate(DATA_SOURCE);
     	
-    	this.jdbcTemplate.update(
-    	        "INSERT INTO Users (username, password, firstname, lastname, emailaddress) values (?, ?, ?, ?, ?)",
-    	        userName, sha256hexPass, firstName, lastName, emailAddress);
+    	if((userName==null) || (pass==null)){
+    		retUser = new QueriedUser("User Name or Password not entered.");
+    	}
+    	else{
+    		sha256hexPass = DigestUtils.sha256Hex(pass);
+    		int countOfUsers = this.jdbcTemplate.queryForObject("SELECT count(*) FROM Users WHERE username=?", Integer.class, new Object[] { userName });
+    		if(countOfUsers > 0){
+    			retUser = new QueriedUser("User Name " + userName + " is already taken.");
+    		}
+    		else{
+    			this.jdbcTemplate.update(
+    					"INSERT INTO Users (username, password, firstname, lastname, emailaddress) values (?, ?, ?, ?, ?)",
+    					userName, sha256hexPass, firstName, lastName, emailAddress);
     	
-    	
-    	User retUser = this.jdbcTemplate.queryForObject(
-                "SELECT id,username,firstname,lastname,emailaddress FROM Users WHERE username=? AND password=?", 
-                new Object[] { userName, sha256hexPass },
-                (rs, rowNum) -> new User(rs.getLong("id"), rs.getString("username"), rs.getString("firstname"),rs.getString("lastname"),rs.getString("emailaddress"))
-        );
+    			retUser = this.jdbcTemplate.queryForObject(
+    					"SELECT id,username,firstname,lastname,emailaddress FROM Users WHERE username=? AND password=?", 
+    					new Object[] { userName, sha256hexPass },
+    					(rs, rowNum) -> new QueriedUser(rs.getLong("id"), rs.getString("username"), rs.getString("firstname"),rs.getString("lastname"),rs.getString("emailaddress"),"Registration Success")
+    					);
+    		}
+    	}
     	
     	return retUser;
     }
