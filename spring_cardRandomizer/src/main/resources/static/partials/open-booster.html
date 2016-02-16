@@ -1,0 +1,13 @@
+<section class="boosterSection">
+    <h2>Open a booster pack!</h2>
+    <p>Click to open a {{cardSetName}} booster pack.</p>
+    <select ng-model="cardSet" ng-change="getSetCards()">
+        <option ng-repeat="curSet in allSets | orderBy:'releaseDate'" value="{{curSet.id}}">{{curSet.name}}</option>
+    </select>
+    <button ng-click="openBooster()">Click to Open Booster</button>
+    <ul class="boosterAll">
+        <li class="boosterSingle" ng-repeat="card in boosterReturn">
+            <img ng-src="{{card.image_url}}" alt="{{card.name}}">
+        </li>
+    </ul>
+</section>

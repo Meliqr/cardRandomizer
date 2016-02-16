@@ -1,0 +1,10 @@
+<section>
+    <h2>Check Registered Users</h2>
+    <p>Use button to check all registered users.</p>
+    <button ng-click="getAllUsers()">Click to Check Users</button>
+    <ul class="usersList">
+        <li ng-repeat="user in users" class="userSingle">
+            <p>{{user.id}} {{user.userName}} {{user.firstName}} {{user.lastName}} {{user.emailAddress}}</p>
+        </li>
+    </ul>
+</section>

@@ -1,0 +1,11 @@
+<section class="loginForm">
+<form name="loginForm" ng-submit="loginForm.$valid && getUser()" novalidate>
+        <h2>User Login Form</h2>
+        <p>Enter user name and password.</p>
+        <label for="login-user-name">User Name:</label> <input type="text" ng-model="loginUser.userName" id="login-user-name" required />
+        <label for="login-password">Password:</label> <input type="password" ng-model="loginUser.userPass" id="login-password" required />
+        <input type="submit" value="Click to Login" />
+        <p class="userReturn">{{user.id}} {{user.userName}} {{user.firstName}} {{user.lastName}}
+            {{user.emailAddress}} {{user.queryResponse}}</p>
+ </form>
+</section>

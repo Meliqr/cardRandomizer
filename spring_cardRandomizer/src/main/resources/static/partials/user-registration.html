@@ -1,0 +1,13 @@
+<section class="registerForm">
+    <form name="registerForm" ng-submit="registerForm.$valid && registerUserButton()" novalidate>
+        <h2>User Registration Form</h2>
+        <p>Enter user information and submit to add user.</p>
+        <label for="register-user-name">User Name:</label> <input type="text" ng-model="registerIn.userName" id="register-user-name" required/>
+        <label for="register-password">Password:</label><input type="password" ng-model="registerIn.pass" id="register-password" required/>
+        <label for="register-first-name">First Name:</label> <input type="text" ng-model="registerIn.firstName" id="register-first-name" required />
+        <label for="register-last-name">Last Name:</label> <input type="text" ng-model="registerIn.lastName" id="register-last-name" required />
+        <label for="register-email-address">Email Address:</label> <input type="email" ng-model="registerIn.emailAddress" id="register-email-address" required />
+        <input type="submit" value="Click to Register" />
+        <p>{{registerReturn}}</p>
+    </form>
+</section>

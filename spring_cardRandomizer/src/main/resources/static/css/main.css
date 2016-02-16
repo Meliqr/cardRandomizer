@@ -95,12 +95,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+Colors:
+Blues--
+0C5DA5
+26537C
+043A6B
+408DD2
+679FD2
+Oranges--
+FF4F00
+BF5D30
+A63400
+FF7B40
+FF9E73
+Yellows--
+FFC200
+BF9D30
+A67E00
+FFD140
+FFDD73
+*/
+
 body{
-    background-color:#0C5DA5;
+    background-color:#26537C;
 }
 .boosterAll li{
     display:inline;
 }
+.navMenu{
+    min-width:290px;
+    max-width:600px;
+    margin:10px auto 10px auto;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align:center;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.greyImg{
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
 label, input{
     display:block;
 }
@@ -136,7 +190,9 @@ section{
     background-color:#FFFFFF;
     min-width:290px;
     max-width:750px;
+    min-height:700px;
 }
+
 
 footer{
     border-top:1px solid black;
@@ -160,8 +216,28 @@ button{
     border-radius:2px;
 }
 
+input[type="submit"]{
+    background-color: #FFDD73; /* Green */
+    border: 1px solid black;
+    color: #444444;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:2px;
+}
+
 select{
     height:35px;
+}
+
+input.ng-invalid.ng-dirty {
+    border: 2px solid #FA787E;
+}
+
+input.ng-valid.ng-dirty {
+    border: 2px solid #78FA89;
 }
 
 

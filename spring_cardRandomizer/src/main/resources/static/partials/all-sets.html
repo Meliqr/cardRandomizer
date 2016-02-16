@@ -1,0 +1,13 @@
+<section class="cardSetSection">
+    <h2>View All Cards in a Set!</h2>
+    <p>Click to check the cards in {{cardSetName}}.</p>
+    <select ng-model="cardSet" ng-change="getSetCards()">
+        <option ng-repeat="curSet in allSets | orderBy:'releaseDate'" value="{{curSet.id}}">{{curSet.name}}</option>
+    </select>
+    <button ng-click="showCardsInSet()">View All Cards In Set</button>
+    <ul class="boosterAll">
+        <li class="boosterSingle" ng-repeat="card in setReturn">
+            <img ng-src="{{card.image_url}}" alt="{{card.name}}">
+        </li>
+    </ul>
+</section>

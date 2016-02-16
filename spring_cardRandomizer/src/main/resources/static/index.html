@@ -12,7 +12,9 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>
-    <script src="js/userScripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -20,57 +22,24 @@
 <![endif]-->
 <header>
     <h1>MTG Card Randomizer</h1>
+    <div class="navMenu">
+    <nav>
+<ul>
+    <li><a href="#/user/login">User Login</a></li>
+    <li><a href="#/user/register">User Registration</a></li>
+    <li><a href="#/user/all">All Users</a></li>
+    <li><a href="#/booster">Open Booster</a></li>
+    <li><a href="#/cardSets">All Sets</a></li>
+</ul>
+    </nav>
+        </div>
 </header>
-<div ng-controller="userLoginCtrl">
-<section class="loginForm">
-    <h2>User Login Form</h2>
-    <p>Enter user name and password.</p>
-    <label for="login-user-name">User Name:</label> <input type="text" ng-model="userName" id="login-user-name"/>
-    <label for="login-password">Password:</label> <input type="password" ng-model="userPass" id="login-password"/>
-    <button ng-click="getUser()">Click to Login</button>
-    <p class="userReturn">{{user.id}} {{user.userName}} {{user.firstName}} {{user.lastName}}
-        {{user.emailAddress}} {{user.queryResponse}}</p>
-</section>
 
-<section ng-controller="userRegisterCtrl" class="registerForm">
-    <h2>User Registration Form</h2>
-    <p>Enter user information and submit to add user.</p>
-    <label for="register-user-name">User Name:</label> <input type="text" ng-model="registerUser" id="register-user-name"/>
-    <label for="register-password">Password:</label><input type="password" ng-model="registerPass" id="register-password"/>
-    <label for="register-first-name">First Name:</label> <input type="text" ng-model="registerFirstName" id="register-first-name"/>
-    <label for="register-last-name">Last Name:</label> <input type="text" ng-model="registerLastName" id="register-last-name"/>
-    <label for="register-email-address">Email Address:</label> <input type="email" ng-model="registerEmailAddress" id="register-email-address"/>
-    <button ng-click="registerUserButton()">Click to Register</button>
-    <p>{{registerReturn}}</p>
-</section>
-
-<section ng-controller="allUsersCtrl">
-    <h2>Check Registered Users</h2>
-    <p>Use button to check all registered users.</p>
-    <button ng-click="getAllUsers()">Click to Check Users</button>
-    <ul class="usersList">
-        <li ng-repeat="user in users" class="userSingle">
-            <p>{{user.id}} {{user.userName}} {{user.firstName}} {{user.lastName}} {{user.emailAddress}}</p>
-        </li>
-    </ul>
-</section>
-
-
-<section ng-controller="openBoosterCtrl">
-    <h2>Open a booster pack!</h2>
-    <p>Click to open a {{cardSetName}} booster pack.</p>
-    <select ng-model="cardSet" ng-change="getSetCards()">
-        <option ng-repeat="curSet in allSets | orderBy:'releaseDate'" value="{{curSet.id}}">{{curSet.name}}</option>
-    </select>
-    <button ng-click="openBooster()">Click to Open Booster</button>
-    <ul class="boosterAll">
-        <li class="boosterSingle" ng-repeat="card in boosterReturn">
-            <img ng-src="{{card.image_url}}" alt="{{card.name}}">
-        </li>
-    </ul>
-</section>
+<div ng-view>
 
 </div>
+
+
 <footer>
     <p class="copyInfo">The information presented on this site about Magic: The Gathering, both literal and graphical, is copyrighted by Wizards of the Coast.
         This website is not produced, endorsed, supported, or affiliated with Wizards of the Coast.</p>
